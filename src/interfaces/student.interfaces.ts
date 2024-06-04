@@ -20,4 +20,4 @@ export interface IStudent{
 
 export type TCreateStudentBody = Omit<IStudent, 'id' | 'studentInfo'>;
 
-export type TUpdateStudentBody = Partial<TCreateStudentBody>;
+export type TUpdateStudentBody= Partial<TCreateStudentBody>;

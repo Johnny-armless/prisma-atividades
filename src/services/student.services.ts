@@ -23,4 +23,7 @@ export class StudentServices {
          include: { studentInfo: true },
       });
    }
-}   
+   async updatOne(id: number, data: TUpdateStudentBody) {
+      return await prisma.student.update({where: {id}, data});
+   }
+} 
